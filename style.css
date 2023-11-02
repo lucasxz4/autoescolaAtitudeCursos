@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
 :root {
     --color01: #F2BB16;
     --color02: #F2A413;
@@ -12,9 +13,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body::-webkit-scrollbar {
+    width: 12px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: orange;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #f6be6d;
+    border-radius: 20px;
+    border: 3px solid orange;
+}
 body {
-    height: 100vh;
+    height: 100%;
     background-image: linear-gradient(to top, #f2bb16a9, #f2a41393, #f2790f91);
     background-attachment: fixed;
 }
@@ -45,7 +58,7 @@ legend {
     padding: 20px 0px;
 }
 .logo img {
-    width: 50%;
+    max-width: 200px;
     animation-iteration-count: infinite;
     animation-duration: 3s;
 }
@@ -192,4 +205,35 @@ legend {
 .button:hover::before {
     opacity: 1;
 }
-  
+footer {
+    display: flex;
+    flex-direction: column;
+}
+.titleMoreInformation {
+    text-align: center;
+    padding: 30px 0px;
+    font-family: 'Dosis';
+    font-size: 24px;
+    font-weight: 100;
+}
+.animate__slideOutDown {
+    animation: animaArrow .5s infinite alternate;
+}
+iframe {
+    width: 100%;
+}
+@keyframes animaArrow {
+    0% {
+
+    }
+    100% {
+
+    }
+}
+@media screen and (min-width: 560px) {
+    #cursos {
+        margin: auto;
+        max-width: 500px;
+        margin-top: 2.6rem;
+    }
+}
