@@ -222,18 +222,33 @@ footer {
 iframe {
     width: 100%;
 }
+marquee {
+    position: fixed;
+    top: 0;
+    
+    background-image: radial-gradient(circle at 100% 0%, #ffaa3e 0, #fe9530 25%, #f37b1f 50%, #e76010 75%, #df460c 100%);
+    color: #F2F2F2;
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+}
 @keyframes animaArrow {
     0% {
 
     }
     100% {
-
-    }
 }
-@media screen and (min-width: 560px) {
-    #cursos {
-        margin: auto;
-        max-width: 500px;
-        margin-top: 2.6rem;
     }
-}
+    @media screen and (min-width: 560px) {
+        #cursos {
+            margin: auto;
+            max-width: 500px;
+            margin-top: 2.6rem;
+        }
+        .mapa {
+            display: flex;
+            justify-content: center;
+        }
+        iframe {
+            max-width: 80%;
+        }
+    }
