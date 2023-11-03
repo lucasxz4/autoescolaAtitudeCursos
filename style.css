@@ -61,6 +61,7 @@ legend {
     max-width: 200px;
     animation-iteration-count: infinite;
     animation-duration: 3s;
+    padding-top: 20px;
 }
 .input__container {
     position: relative;
@@ -78,20 +79,20 @@ legend {
     perspective: 500px;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 50px
 }
-
 .shadow__input {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  filter: blur(30px);
-  border-radius: 20px;
-  background-color: #999cff;
-  background-image: radial-gradient(at 85% 51%, hsla(60,60%,61%,1) 0px, transparent 50%),
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: blur(30px);
+    border-radius: 20px;
+    background-color: #999cff;
+    background-image: radial-gradient(at 85% 51%, hsla(60,60%,61%,1) 0px, transparent 50%),
     radial-gradient(at 74% 68%, rgba(112, 238, 29, 0.63) 0px, transparent 50%),
     radial-gradient(at 64% 79%, rgb(236, 196, 137) 0px, transparent 50%),
     radial-gradient(at 75% 16%, hsla(283,60%,72%,1) 0px, transparent 50%),
@@ -99,7 +100,6 @@ legend {
     radial-gradient(at 91% 83%, hsla(283,74%,69%,1) 0px, transparent 50%),
     radial-gradient(at 72% 91%, hsla(213,75%,75%,1) 0px, transparent 50%);
 }
-
 .input__button__shadow {
   cursor: pointer;
   border: none;
@@ -111,7 +111,6 @@ legend {
   border-radius: 12px;
   padding: 5px;
 }
-
 .input__button__shadow:hover {
   background: rgba(255, 255, 255, 0.411);
 }
